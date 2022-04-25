@@ -1,4 +1,5 @@
 # Landmass-Generation
+Unity demo showcasing procedural landmass generation. Demo uses Perlin noise function to create a set of height data that is later applied to a mesh. Mesh is then coloured and height value of each point in mesh is multiplied by animation curve which allows for creation of multiple different biomes. Project also features player-controlled tank and alongside it, terrain destruction system which update terrain after each collision with bullet.
 
 ![1](https://user-images.githubusercontent.com/79580449/165073349-ce55e2f7-a17e-4823-80e7-d92bd97bd346.PNG)
 ![2](https://user-images.githubusercontent.com/79580449/165073357-c932c1ea-afa0-4b2b-8dd7-a27a3e7f34cd.PNG)
