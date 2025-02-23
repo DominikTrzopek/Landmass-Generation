@@ -4,25 +4,24 @@ using UnityEngine;
 
 public static class CreateDesMap
 {
-    const int size = 201;
-    const int radious = 3, maxradious = 6;
+    static int size = 241;
+    const int radious = 3, maxradious = 10;
     public static float[,] DestructionMap(Vector2 collisionInfo)
     {
         float[,] map = new float[size, size];
         int collisionI = (int)collisionInfo.x;
         int collisionJ = (int)collisionInfo.y;
-
         for (int i = 0; i < size; i++)
         {
             for (int j = 0; j < size; j++)
             {
 
                 if (i != collisionI || j != collisionJ)
-                    map[i, j] = 0f;
+                    map[i, j] = 0;
                 else if (i > maxradious && j > maxradious)
                     for (int y = j - maxradious; y <= j + maxradious; y++)
                     {
-
+  
                         for (int x = i - maxradious; x <= i + maxradious; x++)
                         {
                             //x-row
